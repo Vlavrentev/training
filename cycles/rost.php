@@ -20,21 +20,23 @@ $classmates = array(
   'Таня'  =>  179,
   'Маня'  =>  171
 );
-function funck ($anonHeight, $classmates) {
+function classHeight ($anonHeight, $classmates) {
 /* Перебираем всех одноклассников */
 foreach ($classmates as $name => $height) {
-    echo "Имя: {$name}, рост: {$height} см. ";
+     $string[]="Имя: {$name}, рост: {$height} см. ";
     if ($height>$anonHeight) {
         $overh[$name]=$height;
-    echo 'при этом выше анона ' . PHP_EOL;
+    $string[]= 'при этом выше анона ' . PHP_EOL;
     } 
     else {
-    echo 'при этом ниже анона ' . PHP_EOL;}
+    $string[]= 'при этом ниже анона ' . PHP_EOL;}
     /* Тут надо добавить проверку, выше или ниже этот человек, чем анон,
     и подсчитать число тех, кто выше */
 }
+
 $number = count($overh);
-echo "В классе {$number} человек выше анона\n";
+$number = "В классе {$number} человек выше анона\n";
+return implode ($string). $number;
 }
-echo funck ($anonHeight, $classmates);
+echo classHeight ($anonHeight, $classmates);
 
