@@ -19,7 +19,8 @@ $namepart= [
         'за',
         'чи'
     ];
-    
+
+//todo wid - дать читаемое имя переменной и параметру
 $wid=rand(1,8);
 function nameGenerator ($namepart, $wid) {
  for ($name=[], $i=0; $i <= $wid; $i++){
@@ -30,3 +31,5 @@ function nameGenerator ($namepart, $wid) {
 }
 $string = nameGenerator($namepart, $wid);
 echo $string ;
+
+

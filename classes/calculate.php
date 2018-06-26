@@ -24,6 +24,9 @@ class Calculate
     public static function checkAnswers($questions, $answers)
     {
         /**
+         * todo это надо писать НАД методом, чтобы работало
+         *
+         *
          * @param Questions[] $questions
          */
         {
@@ -31,6 +34,10 @@ class Calculate
             if (count($questions) != count($answers)) {
                 die("Число ответов и вопросов не совпадает\n");
             }
+
+            /**
+             * todo комменты то в одной строке, то над строкой. приведи к одному виду - любому
+             */
 
             $pointsTotal = 0; // сколько набрано баллов
 

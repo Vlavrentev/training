@@ -10,4 +10,7 @@ $questions[] = new Question("Какая планета располагаетс�
 
 Calculate::printQuestions($questions);
 $answers = ['b', 'd', 'a'];
+
+
+//todo тут не нужно присваивание(=) - просто выводим результат работы checkAnswers
 echo $checAns = Calculate::checkAnswers($questions, $answers);
