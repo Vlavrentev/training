@@ -13,14 +13,15 @@ $word5 = array('очертания', 'безысходность', 'начерт
 /**
  * todo пояснить по какому принципу работает $i - количество строк
  */
-function funck ($word1, $word2, $word3, $word4, $word5) {
-    for ($i = 0; $i < 5; $i++)
+function poems ($word1, $word2, $word3, $word4, $word5) {
+    for ($i = 0; $i < 4; $i++)
     {
-     $huiprostoi = array (
+     $stih = array (
      $word1[rand(0,3)], $word2[rand(0,6)], $word3[rand(0,8)], 'я', $word4[rand(0,8)], $word5[rand(0,5)]);
-     echo implode(" ", $huiprostoi) . PHP_EOL;
+      $string[]= implode(" ", $stih) . PHP_EOL;
         
     };
+    return implode ($string);
 }
-echo funck ($word1, $word2, $word3, $word4, $word5);
+echo poems ($word1, $word2, $word3, $word4, $word5);
 ?>
