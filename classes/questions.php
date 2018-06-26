@@ -34,10 +34,12 @@ class Question
     {
         return $this->answers;
     }
+
     public function getCorrectAnswer()
     {
         return $this->correctAnswer;
     }
+
     public function getHelp()
     {
         return $this->help;

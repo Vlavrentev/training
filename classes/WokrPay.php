@@ -1,4 +1,5 @@
 <?php
+
 class WorkPay
 {
     private $fio;
@@ -9,21 +10,24 @@ class WorkPay
     {
         $this->fio = $fio;
         $this->zarabotal = $zarabotal;
-        $this->otrabotal =$otrabotal;
+        $this->otrabotal = $otrabotal;
     }
 
     public function getFio()
     {
         return $this->fio;
     }
+
     public function getZarabotal()
     {
         return $this->zarabotal;
     }
+
     public function getOtrabotal()
     {
         return array_sum($this->otrabotal);
     }
+
     public function getRabMoneys()
     {
         $otrabotal = $this->getOtrabotal();
