@@ -1,4 +1,5 @@
 <?php
+
 class Calculate
 {
     /**
@@ -62,8 +63,9 @@ class Calculate
             }
 
             // Выведем итог
-            $totals= "Правильных ответов: {$correctAnswers} из {$totalQuestions}, баллов набрано: {$pointsTotal} из {$pointsMax}\n";
-        } return $result . PHP_EOL . $totals;
+            $totals = "Правильных ответов: {$correctAnswers} из {$totalQuestions}, баллов набрано: {$pointsTotal} из {$pointsMax}\n";
+        }
+        return $result . PHP_EOL . $totals;
     }
 
 }
