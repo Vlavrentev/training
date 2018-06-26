@@ -1,6 +1,8 @@
 <?php
 
 $namepart= [
+        'га',
+        'му',
         'ку',
         'ги',
         'рю',
@@ -19,9 +21,12 @@ $namepart= [
     ];
     
 $wid=rand(1,8);
-function funck ($namepart, $wid){
+function nameGenerator ($namepart, $wid) {
  for ($name=[], $i=0; $i <= $wid; $i++){
-    echo implode ($name=[$namepart[rand(0,14)]]);
+ $str = implode ([implode ($name=[$namepart[rand(0,16)]])]);
+ $string[]=$str;
  }
+ return implode ($string);
 }
-echo funck ($namepart, $wid);
+$string = nameGenerator($namepart, $wid);
+echo $string ;
