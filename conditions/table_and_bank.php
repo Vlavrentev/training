@@ -4,23 +4,23 @@
 //todo названия функций с маленькой буквы (стандарт PSR-7)
 
 
-function Table (){
+function multiplicationTable (){
     //todo непонятные имена переменных $x
-    for ($x=1; $x<10; $x++)
+    for ($multiplier=1; $multiplier<10; $multiplier++)
    {
-       $table[]=($x ."*". $x .'='. $x*$x . PHP_EOL);
+       $table[]=($multiplier ."*". $multiplier .'='. $multiplier*$multiplier . PHP_EOL);
    }
    return implode ($table);
 }
-   function bankDebit (){
-   $y=15;
+   function bankDeposit (){
+   $years=15;
        //todo непонятные имена переменных $x, $y
-   for ($x=10000; $x<=1000000; $x=round($x +($x/10))) {
-        $calculate[]=($y ++ .' год '. $x. PHP_EOL);
+   for ($deposit=10000; $deposit<=1000000; $deposit=round($deposit +($deposit/10))) {
+        $calculate[]=($years ++ .' год '. $deposit. PHP_EOL);
    }
-    $statistic[]=($x. ' будет на счету, когда вкладчику будет '. $y .' года' . PHP_EOL);
+    $statistic[]=($deposit. ' будет на счету, когда вкладчику будет '. $years .' года' . PHP_EOL);
     return implode ($calculate). PHP_EOL . implode ($statistic) ;
 }
 
-echo Table () . PHP_EOL;
-echo bankDebit();
+echo multiplicationTable () . PHP_EOL;
+echo bankDeposit();
